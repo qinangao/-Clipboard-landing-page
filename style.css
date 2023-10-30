@@ -7,6 +7,7 @@
   --Light-Blue: hsl(233, 100%, 69%);
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
+  --Footer: #f5f6f8;
 }
 body {
   margin: 0 auto;
@@ -46,6 +47,9 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
+.btn:hover {
+  cursor: pointer;
+}
 .cyan {
   background-color: var(--Strong-Cyan);
 }
@@ -72,6 +76,41 @@ body {
   align-items: center;
   gap: 1.5rem;
   margin: 50px 0 80px 0;
+}
+footer {
+  background-color: var(--Footer);
+  text-align: center;
+}
+.footer_logo {
+  width: 50px;
+  padding: 3rem;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.list a,
+.attribution a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+}
+.list a:hover {
+  cursor: pointer;
+  color: var(--Strong-Cyan);
+}
+.contacts {
+  padding: 2rem;
+}
+.contact_icon {
+  padding: 1rem;
+}
+.attribution {
+  margin: 0;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 15px;
 }
 
 @media (max-width: 380px) {
